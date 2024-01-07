@@ -5,6 +5,11 @@
     grid-gap: 20px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
 
 .form__input {
     height: 40px;
@@ -35,4 +40,3 @@
 .form__button:active {
     border: 1px solid black;
 }
-
