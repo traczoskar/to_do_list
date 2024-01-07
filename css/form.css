@@ -6,15 +6,6 @@
     align-items: center;
 }
 
-.form__legend {
-    grid-column: span 2;
-    background-color: #ffff;
-    padding: 20px;
-    box-shadow: 5px 0px 15px -4px #CECECE;
-    font-weight: 700;
-    font-size: 20px;
-}
-
 .form__div {
     background-color: #ffff;
     padding: 20px;
@@ -45,7 +36,7 @@
 
 .form__button:hover {
     background-color: hsla(180, 100%, 25%, 0.900);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .form__button:active {

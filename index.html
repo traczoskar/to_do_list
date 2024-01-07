@@ -9,6 +9,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/body.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
     <link href="css/tasklist.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +21,24 @@
 
 <body class="body">
     <h1 class="header">Lista zadań</h1>
-    <form class="form js-form">
-        <legend class="form__legend">Dodaj nowe zadanie</legend>
-        <div class="form__div">
-            <input class="form__input js-input">
-            <button class="form__button js-addTask">Dodaj zadanie</button>
-        </div>
+    <section class="section">
+        <h2 class="section__header">Dodaj nowe zadanie</h2>
+        <form class="form js-form">
+            <div class="form__div">
+                <input class="form__input js-input">
+                <button class="form__button js-addTask">Dodaj zadanie</button>
+            </div>
 
-    </form>
+        </form>
+    </section>
 
-    <ul class="taskList js-tasks">
+    <section>
+        <h2>Lista zadań</h2>
+        <ul class="taskList js-tasks">
 
-    </ul>
+        </ul>
+    </section>
+
 </body>
 
 </html>
