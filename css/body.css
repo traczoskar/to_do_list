@@ -13,12 +13,3 @@ html {
     word-break: break-word;
     background-color: #eee;
 }
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 26px;
-}

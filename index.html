@@ -8,8 +8,9 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/body.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <link href="css/tasklist.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +21,24 @@
 </head>
 
 <body class="body">
-    <h1 class="header">Lista zadań</h1>
-    <section class="section">
-        <h2 class="section__header">Dodaj nowe zadanie</h2>
-        <form class="form js-form">
-            <div class="form__div">
+    <main class="main">
+        <h1 class="main__header">Lista zadań</h1>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <form class="form js-form">
                 <input class="form__input js-input">
                 <button class="form__button js-addTask">Dodaj zadanie</button>
-            </div>
+            </form>
+        </section>
 
-        </form>
-    </section>
+        <section>
+            <h2>Lista zadań</h2>
+            <ul class="taskList js-tasks">
 
-    <section>
-        <h2>Lista zadań</h2>
-        <ul class="taskList js-tasks">
+            </ul>
+        </section>
+    </main>
 
-        </ul>
-    </section>
 
 </body>
 

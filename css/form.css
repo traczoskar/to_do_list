@@ -1,17 +1,10 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    grid-gap: 20px;
 }
 
-.form__div {
-    background-color: #ffff;
-    padding: 20px;
-    box-shadow: 5px 0px 15px -4px #CECECE;
-    grid-gap: 15px;
-}
 
 .form__input {
     height: 40px;
