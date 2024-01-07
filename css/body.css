@@ -7,8 +7,6 @@ html {
 }
 
 .body {
-    max-width: 900px;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;
     background-color: #eee;

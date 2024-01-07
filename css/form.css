@@ -36,6 +36,3 @@
     border: 1px solid black;
 }
 
-.listItem--done {
-    text-decoration-line: line-through;
-}
