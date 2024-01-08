@@ -17,7 +17,7 @@
 
 **5.** You can easily delete your task using the red *"remove"* button with waste bucket icon on the right side.
 
-![How to use GIF](images/to_do_list_gif_1.gif)
+![How to use GIF](images/to_do_list_gif_short.gif)
 
 ## Features
 
