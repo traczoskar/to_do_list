@@ -8,9 +8,13 @@
 ## How to use
 
 **1.** Input the name of your task or shopping item that you want to add to your list.
+
 **2.** *"Click"* adding the task button on the right side of the input - "*Dodaj zadanie*".
+
 **3.** The task will show up on the list below.
+
 **4.** Now you can use toggle the task to be *"done"* using the green button on its left side. The task will be crossed off and the button will get tick icon.
+
 **5.** You can easily delete your task using the red *"remove"* button with waste bucket icon on the right side.
 
 ![How to use GIF](images/to_do_list_gif_1.gif)
@@ -23,6 +27,10 @@
 - Versatile and universal application
 - Responsive on any device due to media queries
 - Buttons are interactive and its appearance depends of actual state
+
+### Below you can see how the app looks in the mobile view.
+
+![Mobile appearance](images/to_do_list_screenshot.png)
 
 ## Used technologies and conventions
 
