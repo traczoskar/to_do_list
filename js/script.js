@@ -18,6 +18,8 @@
         },
     ];
 
+    let hideDoneTasks = false;
+
     const addNewTask = (newTaskContent) => {
         taskList = [
             ...taskList,
@@ -28,8 +30,8 @@
 
     const removeTask = (taskIndex) => {
         taskList = [
-            ...taskList.slice(0,taskIndex),
-            ...taskList.slice(taskIndex +1),
+            ...taskList.slice(0, taskIndex),
+            ...taskList.slice(taskIndex + 1),
         ];
         render();
     };
@@ -38,10 +40,10 @@
         taskList = [
             ...taskList.slice(0, taskIndex),
             {
-                ...taskList[taskIndex], 
+                ...taskList[taskIndex],
                 done: !taskList[taskIndex].done,
             },
-            ...taskList.slice(taskIndex +1),
+            ...taskList.slice(taskIndex + 1),
         ];
         render();
     };
@@ -67,15 +69,41 @@
         });
     };
 
+    const bindButtonsEvents = () => {
+
+        const hideDoneTasksButton = document.querySelector(".js-hideDone");
+
+        if (hideDoneTasksButton) {
+            hideDoneTasksButton.addEventListener("click", (toggleHideDoneTasks));
+        };
+
+        const finishAllTasksButton = document.querySelector(".js-finishAll");
+
+        if (finishAllTasksButton) {
+            finishAllTasksButton.addEventListener("click", (finishAllTasks));
+        };
+    };
+
+    const finishAllTasks = () => {
+        taskList = taskList.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
+
     const renderTaskList = () => {
 
         let taskListHTMLContent = "";
 
         for (const task of taskList) {
             taskListHTMLContent += `
-            <li 
-              class= "taskList__task js-task"
-              >
+            <li class= "taskList__task ${task.done && hideDoneTasks ? "taskList__task--hidden" : ""} js-task">
               <button class="taskList__button taskList__button--toggleDone js-done">
                ${task.done ? "✓" : ""}
               </button>
@@ -91,13 +119,12 @@
         document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
     };
 
-    const renderButtons = () => {};
-
     const render = () => {
         renderTaskList();
-        renderButtons();
         bindRemoveEvents();
         bindToggleDoneEvents();
+        renderButtons();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
