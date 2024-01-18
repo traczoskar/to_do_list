@@ -1,3 +1,8 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .buttons__button {
     border: none;
     background-color: transparent;
@@ -6,10 +11,14 @@
     margin: 0 0 0 20px;
 }
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
 }
+
+.buttons__button:disabled {
+    color: #bbb;
+}
+
 
 @media (max-width: 767px) {
     .buttons__button {
