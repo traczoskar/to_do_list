@@ -1,5 +1,4 @@
 {
-
     let taskList = [
         {
             content: "zrobić zakupy 🛍️",
@@ -17,7 +16,7 @@
             content: "zabookować bilety 🎟️",
             done: false,
         },
-    ]
+    ];
 
     const addNewTask = (newTaskContent) => {
         taskList = [
@@ -58,7 +57,7 @@
         });
     }
 
-    const render = () => {
+    const renderTaskList = () => {
 
         let taskListHTMLContent = "";
 
@@ -77,9 +76,14 @@
                🗑️
               </button>
             </li>`
-        }
+        };
 
         document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
+    };
+
+    const render = () => {
+        renderTaskList();
+        // renderButtons();
         bindRemoveEvents();
         bindToggleDoneEvents();
     };
@@ -107,4 +111,4 @@
     };
 
     init();
-}
+};
