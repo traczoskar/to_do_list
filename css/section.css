@@ -11,3 +11,25 @@
     font-weight: 700;
     font-size: 20px;
 }
+
+.section__title {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.section--grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .section--grid {
+        grid-template-columns: 1fr;
+    }
+}
