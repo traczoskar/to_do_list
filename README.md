@@ -42,10 +42,14 @@
 - **camelCase** class and functions naming
 - **CSS:** (normalize.css) applied
 - **CSS:** (border-box: box-sizing) applied
--  **CSS:** Grid
+- **CSS:** Grid
+- **CSS:** Transform and transitions
 - **JS ES6** Features
-- **JS:** Array
+- **JS:** Array, methods, spread syntax, merge
+- **JS:** Objects
 - **JS:** Arrow functions
+- **JS:** Immutability
+
 
 ## Thanks for visiting my repository.
-I hope this application will be helpful also for You. Please, feel free to use it ;)
+I hope this application will be helpful also for You. Please, feel free to use it.
