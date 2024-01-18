@@ -119,6 +119,25 @@
         document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
     };
 
+
+    const renderButtons = () => {
+        const buttonsBlock = document.querySelector(".js-buttons");
+
+        if (!taskList.length) {
+            buttonsBlock.innerHTML = "";
+            return;
+        };
+
+        buttonsBlock.innerHTML = `
+    <button class="buttons__button js-hideDone">
+    ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+    </button>
+    <button class="buttons__button js-finishAll" ${taskList.every(({ done }) => done) ? " disabled" : ""}>
+    Ukończ wszystkie
+    </button>`;
+
+    };
+
     const render = () => {
         renderTaskList();
         bindRemoveEvents();
