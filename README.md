@@ -17,7 +17,11 @@
 
 **5.** You can easily delete your task using the red *"remove"* button with waste bucket icon on the right side.
 
-![How to use GIF](images/to_do_list_gif_short.gif)
+**6.** After you add a task, there will be able 2 additional options: "Hide/Show tasks that are done" and "Finish all tasks".
+
+**7.** Use one of those options to manage your list easier.
+
+![How to use GIF](images/to_do_list_screenshot.png)
 
 ## Features
 
@@ -30,7 +34,7 @@
 
 ### Below you can see how the app looks in the mobile view.
 
-![Mobile appearance](images/to_do_list_screenshot.png)
+![Mobile appearance](images/to_do_list_mobile.png)
 
 ## Used technologies and conventions
 
