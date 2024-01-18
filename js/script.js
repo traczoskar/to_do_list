@@ -27,12 +27,22 @@
     };
 
     const removeTask = (taskIndex) => {
-        taskList.splice(taskIndex, 1);
+        taskList = [
+            ...taskList.slice(0,taskIndex),
+            ...taskList.slice(taskIndex +1),
+        ];
         render();
     };
 
     const toggleDoneTask = (taskIndex) => {
-        taskList[taskIndex].done = !taskList[taskIndex].done;
+        taskList = [
+            ...taskList.slice(0, taskIndex),
+            {
+                ...taskList[taskIndex], 
+                done: !taskList[taskIndex].done,
+            },
+            ...taskList.slice(taskIndex +1),
+        ];
         render();
     };
 
@@ -44,7 +54,7 @@
                 removeTask(taskIndex);
             });
         });
-    }
+    };
 
     const bindToggleDoneEvents = () => {
 
@@ -55,7 +65,7 @@
                 toggleDoneTask(taskIndex);
             });
         });
-    }
+    };
 
     const renderTaskList = () => {
 
@@ -81,9 +91,11 @@
         document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
     };
 
+    const renderButtons = () => {};
+
     const render = () => {
         renderTaskList();
-        // renderButtons();
+        renderButtons();
         bindRemoveEvents();
         bindToggleDoneEvents();
     };
