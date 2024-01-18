@@ -1,6 +1,6 @@
 {
 
-    const taskList = [
+    let taskList = [
         {
             content: "zrobić zakupy 🛍️",
             done: true,
@@ -20,7 +20,10 @@
     ]
 
     const addNewTask = (newTaskContent) => {
-        taskList.push({ content: newTaskContent });
+        taskList = [
+            ...taskList,
+            { content: newTaskContent },
+        ];
         render();
     };
 
