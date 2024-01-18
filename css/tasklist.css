@@ -17,13 +17,17 @@
     text-decoration-line: line-through;
 }
 
+.taskList__task--hidden {
+    display: none;
+}
+
 .taskList__button {
     border: none;
     height: 30px;
     width: 30px;
     color: white;
     padding: 0;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
